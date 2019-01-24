@@ -1,11 +1,6 @@
-nums = input().split()
+nums = [x[::-1] for x in input().split()]
 
 if(int(nums[0]) > int(nums[1])):
-    for i in range(len(nums[0])-1,-1,-1):
-        print(nums[0][i],end="")
-    print("")
+    print(nums[0])
 else:
-    for i in range(len(nums[1])-1,-1,-1):
-        print(nums[1][i],end="")
-    print("")
-    
+    print(nums[1])
